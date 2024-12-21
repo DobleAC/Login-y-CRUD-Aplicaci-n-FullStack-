@@ -12,12 +12,13 @@ function LoginPage() {
 
     return (
         <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-            {Array.isArray(signinErrors) && signinErrors.map((error, i) => (
+            
+            <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+                {signinErrors.map((error, i) => (
                     <div className="bg-red-500 p-2 text-white" key={i}>
                         {error}
                     </div>
                 ))}
-            <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
             
             <h1 className="text-2xl font-bold">Login</h1>
             <form onSubmit={onSubmit}>

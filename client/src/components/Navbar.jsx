@@ -18,7 +18,8 @@ function Navbar() {
                     <Link to='/add-task' className="bg-indigo-500 px-4 py-1 rounded-sm">Add Task</Link>
                 </li>
                 <li>
-                    <Link to='/' onClick={() =>{
+                    <Link to='/' className='bg-red-600 px-4 py-1 rounded-sm'
+                    onClick={() =>{
                         logout();
                     }}>Logout</Link>
                 </li>

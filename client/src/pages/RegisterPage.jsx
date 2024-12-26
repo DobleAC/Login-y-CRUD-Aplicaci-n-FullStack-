@@ -20,7 +20,9 @@ function RegisterPage() {
         
     });
     return (
+        
         <div className="flex items-center justify-center min-h-screen bg-gray-900">
+            
         <div className="bg-zinc-800 max-w-md p10 rounded-md ">
             {
                 registerErrors.map((error, i) => (
@@ -57,7 +59,8 @@ function RegisterPage() {
                 {
                     errors.password && (<p className="text-red-500">Password is required</p>
                 )}
-                <button type="submit">
+                <button type="submit"
+                className='bg-sky-500 text-white px-4 py-2 rounded-md my-2'>
                     Register
                 </button>
             </form>
